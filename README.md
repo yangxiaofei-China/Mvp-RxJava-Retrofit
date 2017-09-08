@@ -1,3 +1,5 @@
+[![Travis](https://img.shields.io/badge/RxJava2-2.1.1-brightgreen.svg)]
+
 > *许多不管怎么做、怎么想都没结果的事，要懂得交给时间。有些事无论你怎么努力怎么勉强，时间不够，还是耐心的等待吧。*
 
 
