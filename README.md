@@ -1,3 +1,5 @@
+![Travis](https://img.shields.io/badge/RxJava2-2.1.1-brightgreen.svg)&nbsp;&nbsp;&nbsp;![Travis](https://img.shields.io/badge/Retrofit2-2.3.0-ff69b4.svg)&nbsp;&nbsp;&nbsp;![Travis](https://img.shields.io/badge/compileSdkVersion-25-blue.svg)
+
 > *许多不管怎么做、怎么想都没结果的事，要懂得交给时间。有些事无论你怎么努力怎么勉强，时间不够，还是耐心的等待吧。*
 
 
