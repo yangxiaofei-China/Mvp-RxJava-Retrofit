@@ -1,6 +1,6 @@
 > *许多不管怎么做、怎么想都没结果的事，要懂得交给时间。有些事无论你怎么努力怎么勉强，时间不够，还是耐心的等待吧。*
 
-#1.序言
+# 1.序言
 
 > 2016年安卓热门词汇MVP，RxJava，Retrofit。时隔一年这些框架依然是很常用的，现在来把这几个关键词整合起来，搭建一个快速开发框架。。。
 
@@ -8,7 +8,7 @@
 ----------
 
 
-###MVP？？？
+### MVP？？？
 对于一些刚学安卓的朋友们应该还不是太熟悉，我们先来温习一下吧！
 ![这里写图片描述](https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0=baike80,5,5,80,26/sign=0d3000fa9c25bc313f5009ca3fb6e6d4/8b82b9014a90f603534849733c12b31bb051ed0e.jpg)
 这张图可以说是看烂了，这张图对于懂了点MVP的人可以说是把中间几个字去掉，都能一眼看穿。这张图到底是什么意思呢？
@@ -17,7 +17,7 @@
 ----------
 
 
-####举个例子：
+#### 举个例子：
 **需求：需要点击一个按钮通过访问网络获取一条数据展示在页面上**
 
 **普通做法：**
@@ -44,8 +44,8 @@
 
 > 程序猿如果不最求代码质量，那和咸鱼有什么区别？
 
-###RxJava2+Retrofit2整合
-####1.玩框架第一步compile ：
+### RxJava2+Retrofit2整合
+#### 1.玩框架第一步compile ：
 
 ```
     compile 'io.reactivex.rxjava2:rxjava:2.1.1'
@@ -56,7 +56,7 @@
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'//配合rxjava2
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'//拦截器
 ```
-####2.创建service
+#### 2.创建service
 
 ```
 public interface RequestService {
@@ -75,7 +75,7 @@ public interface RequestService {
 
 > 单独使用retrofit是返回call，配合RxJava这里我们返回Observable
 
-####3.封装一个工具类
+#### 3.封装一个工具类
 
 ```
 public class RetrofitFactory {
@@ -115,7 +115,7 @@ public class RetrofitFactory {
     }
 }
 ```
-####使用
+#### 使用
 我们整合好了，最后我们看下怎么使用吧！访问个网络获取一个数据
 
 ```
@@ -174,19 +174,19 @@ RxJava2+retrofit2就是这么简单封装好了一条线路下来非常清晰。
 ----------
 
 
-#打造MVP
+# 打造MVP
 先看下我们的成果里面有什么东西吧！没错 就是下面几个类就ok
 
 ![这里写图片描述](http://img.blog.csdn.net/20170907155129462?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvejk1NzI1MDI1NA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-###1.分析
+### 1.分析
 好我们来分析一下mvp  
 
 > 1.view需要找presenter拿数据，那么view里面需要一个presenter对象。
 > 2.presenter需要给view数据，那么presenter也需要一个view对象。
 > 3.model层访问网络使用RxJava+retrofit，数据回调给presenter（后面分析）
 
-###2.思考
+### 2.思考
 
 > 所有的view里面都需要什么操作呢？ 所有的presenter里面都需要什么操作呢？
 > 暂时在我的需求中view和presenter只有如下这么几个功能，当然，如果你还有其他的功能可以再加上去。
@@ -221,7 +221,7 @@ public interface BasePresenter {
 ```
 
 
-###3.接下来编写view和presenter的实现类
+### 3.接下来编写view和presenter的实现类
 
 > 由于每一个view都对应不同的presenter。当然对应的每个presenter也同样对应一个view。所有我们使用接口和泛型来封装了。
 
@@ -336,12 +336,12 @@ public abstract class BasePresenterImpl<V extends BaseView> implements BasePrese
 ----------
 
 
-###4.使用
+### 4.使用
 好的接下来我们来使用一下吧
 首先我们先来个简单的**需求：**
 > 打开一个页面请求网络获取数据，将数据显示在界面上
 
-####1.创建Contact管理接口
+#### 1.创建Contact管理接口
 
 > 首先先思考view需要设置数据所有view中需要一个setData方法
 > presenter需要去访问网络所以需要一个getData方法。代码如下：
@@ -365,7 +365,7 @@ public interface TestContact {
     }
 }
 ```
-####创建Activity和presenter
+#### 创建Activity和presenter
 
 > 创建一个Activity继承BaseActivity它的泛型对应presenter的接口。实现对应的view接口
 > 创建一个TestPresenter继承BasePresenterImpl，泛型对应view的接口。并实现对应的presenter接口
@@ -466,7 +466,7 @@ public class TestPresenter extends BasePresenterImpl<TestContact.view> implement
     }
 }
 ```
-####分析
+#### 分析
 好了相信大部分朋友看了代码都看懂了，简要的分析一下过程吧
 
 
