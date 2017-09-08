@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BaseFrame.iml" filepath="$PROJECT_DIR$/BaseFrame.iml" />
       <module fileurl="file://$PROJECT_DIR$/BaseLib/BaseLib.iml" filepath="$PROJECT_DIR$/BaseLib/BaseLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mvp-RxJava-Retrofit.iml" filepath="$PROJECT_DIR$/Mvp-RxJava-Retrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -180,7 +180,7 @@ RxJava2+retrofit2就是这么简单封装好了一条线路下来非常清晰。
 # 打造MVP
 先看下我们的成果里面有什么东西吧！没错 就是下面几个类就ok
 
-![这里写图片描述](http://img.blog.csdn.net/20170907155129462?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvejk1NzI1MDI1NA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/azhong1011/Mvp-RxJava-Retrofit/tree/master/screenCapture/img_01.png)
 
 ### 1.分析
 好我们来分析一下mvp  
