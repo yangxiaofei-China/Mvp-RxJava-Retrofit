@@ -1,4 +1,4 @@
-package com.zhon.frame.api;
+package com.zhon.frame.model;
 
 import com.zhon.baselib.retroft.BaseApiImpl;
 

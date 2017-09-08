@@ -2,7 +2,7 @@ package com.zhon.frame.mvp.test.presenter;
 
 import com.zhon.baselib.mvpbase.baseImpl.BasePresenterImpl;
 import com.zhon.baselib.retroft.ExceptionHelper;
-import com.zhon.frame.api.Api;
+import com.zhon.frame.model.Api;
 import com.zhon.frame.mvp.test.bean.TestBean;
 import com.zhon.frame.mvp.test.contact.TestContact;
 
