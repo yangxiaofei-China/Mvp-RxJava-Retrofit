@@ -1,10 +1,9 @@
 ![Travis](https://img.shields.io/badge/RxJava2-2.1.1-brightgreen.svg)&nbsp;&nbsp;&nbsp;![Travis](https://img.shields.io/badge/Retrofit2-2.3.0-ff69b4.svg)&nbsp;&nbsp;&nbsp;![Travis](https://img.shields.io/badge/compileSdkVersion-25-blue.svg)
 
-### [CSDN博客地址](http://blog.csdn.net/a_zhon/article/details/77914012)
-
 > *许多不管怎么做、怎么想都没结果的事，要懂得交给时间。有些事无论你怎么努力怎么勉强，时间不够，还是耐心的等待吧。*
 
-### 1.序言
+
+# 1.序言
 
 > 2016年安卓热门词汇MVP，RxJava，Retrofit。时隔一年这些框架依然是很常用的，现在来把这几个关键词整合起来，搭建一个快速开发框架。。。
 
